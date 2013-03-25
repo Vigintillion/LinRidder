@@ -39,7 +39,6 @@ namespace linridder
             graphics.PreferredBackBufferHeight = 1080;
             graphics.ApplyChanges();
             base.Initialize();
-            //
         }
 
         /// <summary>

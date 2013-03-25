@@ -1,0 +1,6 @@
+\\716-fs1\users\if995041\my documents\visual studio 2010\Projects\linridder\linridder\linridder\bin\x86\Debug\linridder.exe
+\\716-fs1\users\if995041\my documents\visual studio 2010\Projects\linridder\linridder\linridder\bin\x86\Debug\linridder.pdb
+\\716-fs1\users\if995041\my documents\visual studio 2010\Projects\linridder\linridder\linridder\obj\x86\Debug\ResolveAssemblyReference.cache
+\\716-fs1\users\if995041\my documents\visual studio 2010\Projects\linridder\linridder\linridder\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+\\716-fs1\users\if995041\my documents\visual studio 2010\Projects\linridder\linridder\linridder\obj\x86\Debug\linridder.exe
+\\716-fs1\users\if995041\my documents\visual studio 2010\Projects\linridder\linridder\linridder\obj\x86\Debug\linridder.pdb
