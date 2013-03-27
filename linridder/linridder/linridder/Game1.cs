@@ -19,6 +19,18 @@ namespace linridder
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Texture2D spriteSheet;
+
+        Rectangle buttonSource;
+        Rectangle button;
+
+        Rectangle button2Source;
+        Rectangle button2;
+
+        Rectangle button3Source;
+        Rectangle button3;
+
+        Rectangle button4Source;
+        Rectangle button4;
         //Ridder ridder;
 
         public Game1()
@@ -52,6 +64,11 @@ namespace linridder
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             spriteSheet = Content.Load<Texture2D>("Graphics");
+
+            buttonSource = new Rectangle(0, 0, 67, 85);
+            button2Source = new Rectangle(69, 0, 67, 85);
+            button3Source = new Rectangle(0, 87, 67, 85);
+            button4Source = new Rectangle(69, 87, 67, 85);
 
             // TODO: use this.Content to load your game content here
         }
