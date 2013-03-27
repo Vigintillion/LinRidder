@@ -124,5 +124,18 @@ namespace linridder
             position.X += (float)((double)velocity * Math.Cos(rotation));
             position.Y += (float)((double)velocity * Math.Sin(rotation));
         }
+
+
     }
+
+    public class Line : Entity
+    {
+        public Line(double Length, double Rotation, Vector2 Position, Texture2D SpriteSheet)
+        {
+            spriteSheet = SpriteSheet;
+            position = Position;
+
+        }
+    }
+
 }
