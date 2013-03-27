@@ -114,14 +114,8 @@ namespace linridder
 
     public class Entity
     {
-        public Vector2 position;
-        public Vector2 spriteCoords;
-        public Vector2 size;
-        public Texture2D spriteSheet;
-        public int velocity;
-        public int acceleration;
-        public double rotation;
-        public double spin;
+        
+
         public Entity(Vector2 Position, Vector2 SpriteCoords, Vector2 Size, Texture2D SpriteSheet, int Velocity, int Acceleration, double Rotation, double Spin)
         {
             position = Position;
@@ -134,6 +128,10 @@ namespace linridder
             spin = Spin;
         }
 
+        public Entity()
+        {
+
+        }
         public void update()
         {
             velocity += acceleration;
@@ -142,6 +140,16 @@ namespace linridder
             position.Y += (float)((double)velocity * Math.Sin(rotation));
         }
 
+        public Vector2 position;
+        public Vector2 spriteCoords;
+        public Vector2 size;
+        public Texture2D spriteSheet;
+        public int velocity;
+        public int acceleration;
+        public double rotation;
+        public double spin;
+
+        public Rectangle rect;
 
     }
 
