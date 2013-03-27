@@ -87,7 +87,7 @@ namespace linridder
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.FromNonPremultiplied(55,74,36,2));
 
             // TODO: Add your drawing code here
 
@@ -103,9 +103,9 @@ namespace linridder
         public Texture2D spriteSheet;
         public int velocity;
         public int acceleration;
-        public int rotation;
-        public int spin;
-        public Entity(Vector2 Position, Vector2 SpriteCoords, Vector2 Size, Texture2D SpriteSheet, int Velocity, int Acceleration, int Rotation, int Spin)
+        public double rotation;
+        public double spin;
+        public Entity(Vector2 Position, Vector2 SpriteCoords, Vector2 Size, Texture2D SpriteSheet, int Velocity, int Acceleration, double Rotation, double Spin)
         {
             position = Position;
             spriteCoords = SpriteCoords;
@@ -115,6 +115,14 @@ namespace linridder
             acceleration = Acceleration;
             rotation = Rotation;
             spin = Spin;
+        }
+
+        public void update()
+        {
+            velocity += acceleration;
+            rotation += spin;
+            position.X += (float)((double)velocity * Math.Cos(rotation));
+            position.Y += (float)((double)velocity * Math.Sin(rotation));
         }
     }
 }
