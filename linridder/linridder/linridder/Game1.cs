@@ -116,7 +116,7 @@ namespace linridder
     {
         
 
-        public Entity(Vector2 Position, Vector2 SpriteCoords, Vector2 Size, Texture2D SpriteSheet, int Velocity, int Acceleration, double Rotation, double Spin, Vector2 Scale)
+        public Entity(Vector2 Position, Vector2 SpriteCoords, Vector2 Size, Texture2D SpriteSheet, int Velocity, int Acceleration, double Rotation, double Spin, Vector2 Scale, /*add spritebatch/*)
         {
             position = Position;
             spriteCoords = SpriteCoords;
@@ -141,6 +141,11 @@ namespace linridder
             position.Y += (float)((double)velocity * Math.Sin(rotation));
         }
 
+        public void draw()
+        {
+            spriteBatch.Draw(spriteSheet, position, rect, Color.White, rotation, Vector2.Zero, scale, SpriteEffects.None, 0f);
+        }
+
         public Vector2 position;
         public Vector2 spriteCoords;
         public Vector2 size;
@@ -163,6 +168,8 @@ namespace linridder
             position = Position;
 
             scale.X = (float)Length / 65;
+
+            rect = new Rectangle(155, 175, 68, 2);
 
 
         }
