@@ -18,6 +18,8 @@ namespace linridder
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        Texture2D spriteSheet;
+        //Ridder ridder;
 
         public Game1()
         {
@@ -34,9 +36,9 @@ namespace linridder
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-            graphics.IsFullScreen = true;
-            graphics.PreferredBackBufferWidth = 1920;
-            graphics.PreferredBackBufferHeight = 1080;
+            graphics.IsFullScreen = false;
+            graphics.PreferredBackBufferWidth = 512;
+            graphics.PreferredBackBufferHeight = 1024;
             graphics.ApplyChanges();
             base.Initialize();
         }
@@ -49,6 +51,7 @@ namespace linridder
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            spriteSheet = Content.Load<Texture2D>("Graphics");
 
             // TODO: use this.Content to load your game content here
         }
@@ -89,6 +92,29 @@ namespace linridder
             // TODO: Add your drawing code here
 
             base.Draw(gameTime);
+        }
+    }
+
+    public class Entity
+    {
+        public Vector2 position;
+        public Vector2 spriteCoords;
+        public Vector2 size;
+        public Texture2D spriteSheet;
+        public int velocity;
+        public int acceleration;
+        public int rotation;
+        public int spin;
+        public Entity(Vector2 Position, Vector2 SpriteCoords, Vector2 Size, Texture2D SpriteSheet, int Velocity, int Acceleration, int Rotation, int Spin)
+        {
+            position = Position;
+            spriteCoords = SpriteCoords;
+            size = Size;
+            spriteSheet = SpriteSheet;
+            velocity = Velocity;
+            acceleration = Acceleration;
+            rotation = Rotation;
+            spin = Spin;
         }
     }
 }

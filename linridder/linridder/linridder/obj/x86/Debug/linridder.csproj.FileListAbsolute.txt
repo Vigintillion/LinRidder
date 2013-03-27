@@ -4,3 +4,10 @@
 \\716-fs1\users\if995041\my documents\visual studio 2010\Projects\linridder\linridder\linridder\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 \\716-fs1\users\if995041\my documents\visual studio 2010\Projects\linridder\linridder\linridder\obj\x86\Debug\linridder.exe
 \\716-fs1\users\if995041\my documents\visual studio 2010\Projects\linridder\linridder\linridder\obj\x86\Debug\linridder.pdb
+U:\New folder\l\LinRidder\linridder\linridder\linridder\bin\x86\Debug\Content\graphics.xnb
+U:\New folder\l\LinRidder\linridder\linridder\linridder\bin\x86\Debug\linridder.exe
+U:\New folder\l\LinRidder\linridder\linridder\linridder\bin\x86\Debug\linridder.pdb
+U:\New folder\l\LinRidder\linridder\linridder\linridder\obj\x86\Debug\ResolveAssemblyReference.cache
+U:\New folder\l\LinRidder\linridder\linridder\linridder\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+U:\New folder\l\LinRidder\linridder\linridder\linridder\obj\x86\Debug\linridder.exe
+U:\New folder\l\LinRidder\linridder\linridder\linridder\obj\x86\Debug\linridder.pdb

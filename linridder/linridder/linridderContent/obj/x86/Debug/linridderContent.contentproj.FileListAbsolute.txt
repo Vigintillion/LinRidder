@@ -1,1 +1,2 @@
 \\716-fs1\users\if995041\my documents\visual studio 2010\Projects\linridder\linridder\linridderContent\obj\x86\Debug\ResolveAssemblyReference.cache
+U:\New folder\l\LinRidder\linridder\linridder\linridderContent\obj\x86\Debug\ResolveAssemblyReference.cache
