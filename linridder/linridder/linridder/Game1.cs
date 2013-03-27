@@ -116,7 +116,7 @@ namespace linridder
     {
         
 
-        public Entity(Vector2 Position, Vector2 SpriteCoords, Vector2 Size, Texture2D SpriteSheet, int Velocity, int Acceleration, double Rotation, double Spin)
+        public Entity(Vector2 Position, Vector2 SpriteCoords, Vector2 Size, Texture2D SpriteSheet, int Velocity, int Acceleration, double Rotation, double Spin, Vector2 Scale)
         {
             position = Position;
             spriteCoords = SpriteCoords;
@@ -126,6 +126,7 @@ namespace linridder
             acceleration = Acceleration;
             rotation = Rotation;
             spin = Spin;
+            scale = Scale;
         }
 
         public Entity()
@@ -148,6 +149,7 @@ namespace linridder
         public int acceleration;
         public double rotation;
         public double spin;
+        public Vector2 scale;
 
         public Rectangle rect;
 
@@ -159,6 +161,9 @@ namespace linridder
         {
             spriteSheet = SpriteSheet;
             position = Position;
+
+            scale.X = (float)Length / 65;
+
 
         }
     }
