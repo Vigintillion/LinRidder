@@ -26,11 +26,11 @@ namespace linridder
         Rectangle button2Source;
         Rectangle button2;
 
-        Rectangle button3Source;
-        Rectangle button3;
+      //  Rectangle button3Source;
+      //  Rectangle button3;
 
-        Rectangle button4Source;
-        Rectangle button4;
+       // Rectangle button4Source;
+      //  Rectangle button4;
         //Ridder ridder;
 
         public Game1()
@@ -49,8 +49,8 @@ namespace linridder
         {
             // TODO: Add your initialization logic here
             graphics.IsFullScreen = false;
-            graphics.PreferredBackBufferWidth = 512;
-            graphics.PreferredBackBufferHeight = 1024;
+            graphics.PreferredBackBufferWidth = 800;
+            graphics.PreferredBackBufferHeight = 600;
             graphics.ApplyChanges();
             base.Initialize();
         }
@@ -65,10 +65,13 @@ namespace linridder
             spriteBatch = new SpriteBatch(GraphicsDevice);
             spriteSheet = Content.Load<Texture2D>("Graphics");
 
-            buttonSource = new Rectangle(0, 0, 67, 85);
-            button2Source = new Rectangle(69, 0, 67, 85);
-            button3Source = new Rectangle(0, 87, 67, 85);
-            button4Source = new Rectangle(69, 87, 67, 85);
+            buttonSource = new Rectangle(0, 0, 85, 67);
+            button2Source = new Rectangle(87, 0, 85, 67);
+          //  button3Source = new Rectangle(0, 87, 67, 85);
+          //  button4Source = new Rectangle(69, 87, 67, 85);
+
+            button = new Rectangle(GraphicsDevice.Viewport.Width - 85, GraphicsDevice.Viewport.Height - 67, 85, 67);
+            button2 = new Rectangle(GraphicsDevice.Viewport.Width - 170, GraphicsDevice.Viewport.Height -67, 85, 67);
 
             // TODO: use this.Content to load your game content here
         }
@@ -104,10 +107,14 @@ namespace linridder
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.FromNonPremultiplied(55,74,36,2));
+            GraphicsDevice.Clear(Color.FromNonPremultiplied(128,128,192,151));
+           
 
             // TODO: Add your drawing code here
-
+            spriteBatch.Begin();
+            spriteBatch.Draw(spriteSheet, button, buttonSource, Color.White);
+            spriteBatch.Draw(spriteSheet, button2, button2Source, Color.White);
+            spriteBatch.End();
             base.Draw(gameTime);
         }
     }

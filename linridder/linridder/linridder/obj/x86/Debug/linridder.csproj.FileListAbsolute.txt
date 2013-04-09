@@ -11,3 +11,10 @@ U:\New folder\l\LinRidder\linridder\linridder\linridder\obj\x86\Debug\ResolveAss
 U:\New folder\l\LinRidder\linridder\linridder\linridder\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 U:\New folder\l\LinRidder\linridder\linridder\linridder\obj\x86\Debug\linridder.exe
 U:\New folder\l\LinRidder\linridder\linridder\linridder\obj\x86\Debug\linridder.pdb
+U:\LinRidder\LinRidder\linridder\linridder\linridder\bin\x86\Debug\Content\graphics.xnb
+U:\LinRidder\LinRidder\linridder\linridder\linridder\bin\x86\Debug\linridder.exe
+U:\LinRidder\LinRidder\linridder\linridder\linridder\bin\x86\Debug\linridder.pdb
+U:\LinRidder\LinRidder\linridder\linridder\linridder\obj\x86\Debug\ResolveAssemblyReference.cache
+U:\LinRidder\LinRidder\linridder\linridder\linridder\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+U:\LinRidder\LinRidder\linridder\linridder\linridder\obj\x86\Debug\linridder.exe
+U:\LinRidder\LinRidder\linridder\linridder\linridder\obj\x86\Debug\linridder.pdb
