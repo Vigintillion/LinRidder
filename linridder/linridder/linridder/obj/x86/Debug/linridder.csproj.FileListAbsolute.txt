@@ -18,3 +18,10 @@ U:\LinRidder\LinRidder\linridder\linridder\linridder\obj\x86\Debug\ResolveAssemb
 U:\LinRidder\LinRidder\linridder\linridder\linridder\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 U:\LinRidder\LinRidder\linridder\linridder\linridder\obj\x86\Debug\linridder.exe
 U:\LinRidder\LinRidder\linridder\linridder\linridder\obj\x86\Debug\linridder.pdb
+\\716-FS1\USERS\jw183567\Desktop\Lin\LinRidder\linridder\linridder\linridder\obj\x86\Debug\ResolveAssemblyReference.cache
+\\716-FS1\USERS\jw183567\Desktop\Lin\LinRidder\linridder\linridder\linridder\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+\\716-FS1\USERS\jw183567\Desktop\Lin\LinRidder\linridder\linridder\linridder\obj\x86\Debug\linridder.exe
+\\716-FS1\USERS\jw183567\Desktop\Lin\LinRidder\linridder\linridder\linridder\bin\x86\Debug\Content\graphics.xnb
+\\716-FS1\USERS\jw183567\Desktop\Lin\LinRidder\linridder\linridder\linridder\bin\x86\Debug\linridder.exe
+\\716-FS1\USERS\jw183567\Desktop\Lin\LinRidder\linridder\linridder\linridder\bin\x86\Debug\linridder.pdb
+\\716-FS1\USERS\jw183567\Desktop\Lin\LinRidder\linridder\linridder\linridder\obj\x86\Debug\linridder.pdb

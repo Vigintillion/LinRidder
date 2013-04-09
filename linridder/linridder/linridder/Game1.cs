@@ -26,6 +26,8 @@ namespace linridder
         Rectangle button2Source;
         Rectangle button2;
 
+        Line testLine;
+
       //  Rectangle button3Source;
       //  Rectangle button3;
 
@@ -48,7 +50,7 @@ namespace linridder
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-            graphics.IsFullScreen = false;
+            graphics.IsFullScreen = true;
             graphics.PreferredBackBufferWidth = 800;
             graphics.PreferredBackBufferHeight = 600;
             graphics.ApplyChanges();
@@ -73,6 +75,8 @@ namespace linridder
             button = new Rectangle(GraphicsDevice.Viewport.Width - 85, GraphicsDevice.Viewport.Height - 67, 85, 67);
             button2 = new Rectangle(GraphicsDevice.Viewport.Width - 170, GraphicsDevice.Viewport.Height -67, 85, 67);
 
+            testLine = new Line(66, 0.2, new Vector2(512, 512), spriteSheet);
+
             // TODO: use this.Content to load your game content here
         }
 
@@ -96,6 +100,7 @@ namespace linridder
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
+            
             // TODO: Add your update logic here
 
             base.Update(gameTime);
@@ -112,6 +117,7 @@ namespace linridder
 
             // TODO: Add your drawing code here
             spriteBatch.Begin();
+            testLine.draw(spriteBatch);
             spriteBatch.Draw(spriteSheet, button, buttonSource, Color.White);
             spriteBatch.Draw(spriteSheet, button2, button2Source, Color.White);
             spriteBatch.End();
@@ -123,7 +129,7 @@ namespace linridder
     {
         
 
-        public Entity(Vector2 Position, Vector2 SpriteCoords, Vector2 Size, Texture2D SpriteSheet, int Velocity, int Acceleration, double Rotation, double Spin, Vector2 Scale, /*add spritebatch/*)
+        public Entity(Vector2 Position, Vector2 SpriteCoords, Vector2 Size, Texture2D SpriteSheet, int Velocity, int Acceleration, double Rotation, double Spin, Vector2 Scale)
         {
             position = Position;
             spriteCoords = SpriteCoords;
@@ -134,6 +140,8 @@ namespace linridder
             rotation = Rotation;
             spin = Spin;
             scale = Scale;
+
+            source = new Rectangle((int)(spriteCoords.X), (int)(spriteCoords.Y), (int)(size.X), (int)(size.Y));
         }
 
         public Entity()
@@ -148,9 +156,9 @@ namespace linridder
             position.Y += (float)((double)velocity * Math.Sin(rotation));
         }
 
-        public void draw()
+        public void draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(spriteSheet, position, rect, Color.White, rotation, Vector2.Zero, scale, SpriteEffects.None, 0f);
+            spriteBatch.Draw(spriteSheet, position, source, Color.Red, (float)rotation, Vector2.Zero, 1, SpriteEffects.None, 0f);
         }
 
         public Vector2 position;
@@ -163,7 +171,7 @@ namespace linridder
         public double spin;
         public Vector2 scale;
 
-        public Rectangle rect;
+        public Rectangle source;
 
     }
 
@@ -176,7 +184,7 @@ namespace linridder
 
             scale.X = (float)Length / 65;
 
-            rect = new Rectangle(155, 175, 68, 2);
+            source = new Rectangle(155, 175, 68, 2);
 
 
         }
